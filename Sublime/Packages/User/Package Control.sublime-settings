@@ -1,0 +1,27 @@
+{
+	"auto_upgrade_last_run": 1352373733,
+	"installed_packages":
+	[
+		"BeautifyRuby",
+		"Indent XML",
+		"JsFormat",
+		"Markdown Preview",
+		"Package Control",
+		"Plist Binary",
+		"Pretty JSON",
+		"QuickThemes",
+		"sublime-curl",
+		"SublimeCodeIntel",
+		"Terminal",
+		"Theme - Nexus",
+		"Theme - Phoenix",
+		"Theme - Refined",
+		"Theme - Refresh",
+		"zenburn"
+	],
+	"repositories":
+	[
+		"https://github.com/surjikal/sublime-curl.git",
+		"https://github.com/surjikal/sublime-curl"
+	]
+}

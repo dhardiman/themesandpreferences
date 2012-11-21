@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>presentvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        if ([self respondsToSelector:@selector(presentViewController:animated:completion:)]) {
+            [self presentViewController:&lt;# viewController #&gt; animated:YES completion:nil];
+        }
+        else {
+            [self presentModalViewController:&lt;# viewController #&gt; animated:YES];
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C6E334AF-9583-48F1-8E5C-4A66E53BC5CD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Present Modal View Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

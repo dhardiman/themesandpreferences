@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@findorcreate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSFetchRequest *request = [[NSFetchRequest alloc] init];
+[request setEntity:[moc entityForEntityName:[self description]]];
+NSPredicate *pred = [NSPredicate predicateWithFormat:@"&lt;#id attribute#&gt; == %d", &lt;#id parameter#&gt;];
+[request setPredicate:pred];
+
+NSArray *array = [moc executeFetchRequest:request error:nil];
+[request release];
+
+id result = nil;
+
+switch ([array count]) {
+    case 0:
+        result = [moc insertNewObjectForEntityName:[self description]];
+        &lt;# set id #&gt;
+        break;
+    case 1:
+        result = [array objectAtIndex:0];
+        break;
+    default:
+        GTMLoggerError(@"Expected 0 or 1 %@ but got %d", [self description], [array count]);
+        break;
+}
+
+return result;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F64E1520-5F38-4417-A3E8-5906D68FB109</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>inserts a find or create method body</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Find or create</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
